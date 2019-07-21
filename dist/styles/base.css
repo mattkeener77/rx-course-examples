@@ -1,0 +1,139 @@
+#display{
+    color: #333;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.container{
+    border: solid 3px #333;
+    background-color: #efefef;
+    display: grid;
+    grid-template-columns: 40px 50px auto 50px 40px;
+    grid-template-rows: 25% 100px auto;
+}
+
+.brand-logo{
+    font-weight: 200;
+}
+
+
+
+
+ 
+.display-container {
+    perspective: 100px;
+  }
+.display-container #display-list li {
+    margin-left: -9999px;
+    transition: all 1s ease-out;
+    opacity: 0;
+
+  }
+.display-container #display-list li.show {
+    margin-left: 0;
+    opacity: 1;
+    
+  }
+.display-container #display-list li.show i.material-icons{
+    color: rgb(255, 0, 100);
+}
+
+#pipe{
+    border-top: dotted 4px #999;
+    border-bottom: dotted 4px #999;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#circle{
+    margin: 15px 0 15px 5px;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(0,0,100);
+    border: solid 5px #999;
+    border-radius: 50%;
+}
+
+div.bg-gradient{
+    height: 80px;
+    width: 100%;
+    background-color: rgba(33,33,33,0.4);
+    position: absolute;
+    bottom: 0px;
+}
+
+.spinner {
+  display: inline-block;
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+
+
+
+
+
+.spinner {
+    padding-top: 8px;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+  }
+  .spinner:after {
+    content: " ";
+    display: block;
+    width: 36px;
+    height: 36px;
+    margin: 1px;
+    border-radius: 50%;
+    border: 5px solid rgb(255,0,100);
+    border-color: rgb(255,0,100) transparent rgb(255,0,100) transparent;
+    animation: spinner 1.2s linear infinite;
+  }
+  @keyframes spinner {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
+
+   /* label color */
+   .input-field label {
+    color: rgb(255, 0, 100);
+  }
+  /* label focus color */
+  .input-field input[type=text]:focus + label {
+    color: rgb(255, 0, 100);
+  }
+  /* label underline focus color */
+  .input-field input[type=text]:focus {
+    border-bottom: 1px solid rgb(255, 0, 100);
+    box-shadow: 0 1px 0 0 rgb(255, 0, 100);
+  }
+  /* valid color */
+  .input-field input[type=text].valid {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+  }
+  /* invalid color */
+  .input-field input[type=text].invalid {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+  }
+  /* icon prefix focus color */
+  .input-field .prefix.active, .input-field label.active {
+    color: rgb(100,0,100);
+  }
+
+  input[type=text]:not(.browser-default):focus:not([readonly])+label{
+    color: rgb(100,0,100);
+   
+  }
+  input[type=text]:not(.browser-default):focus:not([readonly]){
+       border-bottom: 1px solid rgb(100,0,100);
+    box-shadow: 0 1px 0 0 rgb(100,0,100);
+  }

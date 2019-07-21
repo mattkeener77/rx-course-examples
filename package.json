@@ -2,13 +2,25 @@
   "name": "rx-101",
   "version": "1.0.0",
   "description": "Course Files",
-  "main": "webpack.config.js",
+  "private": true,
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack-dev-server --open"
   },
-  "keywords": [
-    "RxJS"
-  ],
+  "keywords": [],
   "author": "Matt Keener",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.4.1"
+  },
+  "dependencies": {
+    "@google/maps": "^0.5.5",
+    "d3": "^5.9.7",
+    "lodash": "^4.17.11",
+    "rxjs": "^6.5.2"
+  }
 }
