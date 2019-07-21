@@ -1,7 +1,7 @@
-import './async'
+import './'
 
 document.addEventListener('DOMContentLoaded', function() {
     
-    document.getElementById('title').innerHTML = "Async Programming";
+    document.getElementById('title').innerHTML = "";
      
 });
