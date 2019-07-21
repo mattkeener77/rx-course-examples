@@ -1,25 +1,51 @@
 import { add } from './helpers'
+import { Observable } from 'rxjs';
+
+const o = new Observable(
+    (observer) => {
+        setInterval(
+            ()=>{
+                observer.next('Observable every second');
+            }, 1000
+        )
+    }
+);
+
+const p = new Promise(
+    (resolve, reject) => {
+        setTimeout(
+            ()=>{
+                resolve('Promise');
+            }, 1000
+        )
+    }
+);
+
+// Promise
+p.then(
+    (message)=>{
+        add.li(message)
+    }
+)
+
+// Observable  subscribe(next, error, complete)
+const subscription = o.subscribe(
+   {
+       next :  (message)=>{
+        add.li(message)
+        },
+        error : (error) => console.error(error),
+        complete: ()=> add.li('This Observable is complete')
+   }
+);
+
+setTimeout(
+    ()=>{
+        subscription.unsubscribe()
+    },3000
+)
 
 
-add.li('line 3');
-
-async function runPromise() {
-    add.li('line 7')
-    const p = new Promise(
-        (resolve, reject) => {
-            setTimeout(
-                ()=>{
-                    resolve('We are complete!');
-                }, 5000
-            )
-        }
-    );
-    //const message = await p;
-    add.li('line 18')
-}//end of runPromise
 
 
-runPromise()
 
-
-add.li('line 25')
