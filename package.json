@@ -1,0 +1,14 @@
+{
+  "name": "rx-101",
+  "version": "1.0.0",
+  "description": "Course Files",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "RxJS"
+  ],
+  "author": "Matt Keener",
+  "license": "ISC"
+}
