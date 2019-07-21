@@ -1,1 +1,1 @@
-import { add } from './helpers'
+import { add } from './helpers';
