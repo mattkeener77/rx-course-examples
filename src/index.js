@@ -1,7 +1,7 @@
-import './'
+import './map-filter'
 
 document.addEventListener('DOMContentLoaded', function() {
     
-    document.getElementById('title').innerHTML = "";
+    document.getElementById('title').innerHTML = "map() and filter()";
      
 });
