@@ -1,7 +1,7 @@
-import './'
+import './pluck'
 
 document.addEventListener('DOMContentLoaded', function() {
     
-    document.getElementById('title').innerHTML = "";
+    document.getElementById('title').innerHTML = "pluck()";
      
 });
