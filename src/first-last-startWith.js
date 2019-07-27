@@ -1,14 +1,9 @@
 import {add, sampleData} from "./helpers";
 
-import {pluck, first, last, startWith} from "rxjs/operators";
-
-const me = {
-    "name" : "me"
-};
+import {pluck, switchMap} from "rxjs/operators";
 
 sampleData
 .pipe(
-    startWith(me),
     pluck('company', 'name')
 )
 .subscribe(add.li);
