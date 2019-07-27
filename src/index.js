@@ -1,7 +1,7 @@
-import './'
+import './skip'
 
 document.addEventListener('DOMContentLoaded', function() {
     
-    document.getElementById('title').innerHTML = "";
+    document.getElementById('title').innerHTML = "skip()";
      
 });
