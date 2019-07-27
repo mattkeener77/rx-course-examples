@@ -1,7 +1,7 @@
-import './'
+import './debounce'
 
 document.addEventListener('DOMContentLoaded', function() {
     
-    document.getElementById('title').innerHTML = "";
+    document.getElementById('title').innerHTML = "debounce()";
      
 });
