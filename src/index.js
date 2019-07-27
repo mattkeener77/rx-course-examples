@@ -1,7 +1,7 @@
-import './'
+import './scan-reduce'
 
 document.addEventListener('DOMContentLoaded', function() {
     
-    document.getElementById('title').innerHTML = "";
+    document.getElementById('title').innerHTML = "scan() reduce()";
      
 });
