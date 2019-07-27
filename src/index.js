@@ -1,7 +1,7 @@
-import './'
+import './concat-all'
 
 document.addEventListener('DOMContentLoaded', function() {
     
-    document.getElementById('title').innerHTML = "";
+    document.getElementById('title').innerHTML = "concatAll()";
      
 });
