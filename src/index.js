@@ -1,7 +1,7 @@
-import './audio_project'
+import './behavior-subject'
 
 document.addEventListener('DOMContentLoaded', function() {
     
-    document.getElementById('title').innerHTML = "Subjects";
+    document.getElementById('title').innerHTML = "Behavior Subjects";
      
 });
