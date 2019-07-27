@@ -1,7 +1,7 @@
-import './merge-map'
+import './concat-map'
 
 document.addEventListener('DOMContentLoaded', function() {
     
-    document.getElementById('title').innerHTML = "mergeMap()";
+    document.getElementById('title').innerHTML = "concatMap()";
      
 });
