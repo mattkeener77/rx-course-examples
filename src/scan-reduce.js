@@ -6,7 +6,7 @@ import {scan,reduce, take, concatMap} from "rxjs/operators";
 
 const FS = interval(100).pipe(
     take(20),
-    scan(
+    reduce(
         (acc,value)=>{
             const n = value + 1;
             const last = acc[n];
