@@ -38,7 +38,7 @@ interval(2000)
         map(
             value => `${value * 100}`
         ),
-        exhaustMap(
+       mergeMap(
             x => {
                 console.log(`Source: ${x}`) 
                 // This generated Observable has to complete
