@@ -20,7 +20,7 @@
   "dependencies": {
     "@google/maps": "^0.5.5",
     "d3": "^5.9.7",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.21",
     "rxjs": "^6.5.2"
   }
 }
